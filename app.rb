@@ -1,4 +1,4 @@
-require 'DateTime'
+
 class App < Sinatra::Base
 
 	get '/' do
@@ -14,7 +14,6 @@ class App < Sinatra::Base
 	end
 
 	get '/date' do
-		"The date is date #{DateTime.new}"
 		erb :date
 	end
 end
